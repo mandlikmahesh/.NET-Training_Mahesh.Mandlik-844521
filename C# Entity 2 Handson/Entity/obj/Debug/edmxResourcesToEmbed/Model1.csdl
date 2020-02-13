@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="COMPANYModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="department">
+    <Key>
+      <PropertyRef Name="dep_id" />
+    </Key>
+    <Property Name="dep_id" Type="Int32" Nullable="false" />
+    <Property Name="dep_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="dep_location" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_name" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="job_name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="manager_id" Type="Int32" />
+    <Property Name="hire_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="salary" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="commission" Type="Decimal" Precision="7" Scale="2" Nullable="false" />
+    <Property Name="dep_id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="salary">
+    <Key>
+      <PropertyRef Name="grade" />
+    </Key>
+    <Property Name="grade" Type="Int32" Nullable="false" />
+    <Property Name="min_salary" Type="Int32" Nullable="false" />
+    <Property Name="max_salary" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="COMPANYEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="departments" EntityType="Self.department" />
+    <EntitySet Name="employees" EntityType="Self.employee" />
+    <EntitySet Name="salaries" EntityType="Self.salary" />
+  </EntityContainer>
+</Schema>

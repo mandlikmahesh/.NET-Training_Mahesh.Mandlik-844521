@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="COMPANYModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="department">
+    <Key>
+      <PropertyRef Name="dep_id" />
+    </Key>
+    <Property Name="dep_id" Type="int" Nullable="false" />
+    <Property Name="dep_name" Type="varchar" MaxLength="20" />
+    <Property Name="dep_location" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="employees">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="int" Nullable="false" />
+    <Property Name="emp_name" Type="varchar" MaxLength="15" />
+    <Property Name="job_name" Type="varchar" MaxLength="10" />
+    <Property Name="manager_id" Type="int" />
+    <Property Name="hire_date" Type="date" Nullable="false" />
+    <Property Name="salary" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="commission" Type="decimal" Precision="7" Scale="2" Nullable="false" />
+    <Property Name="dep_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="salary">
+    <Key>
+      <PropertyRef Name="grade" />
+    </Key>
+    <Property Name="grade" Type="int" Nullable="false" />
+    <Property Name="min_salary" Type="int" Nullable="false" />
+    <Property Name="max_salary" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="COMPANYModelStoreContainer">
+    <EntitySet Name="department" EntityType="Self.department" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employees" EntityType="Self.employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="salary" EntityType="Self.salary" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

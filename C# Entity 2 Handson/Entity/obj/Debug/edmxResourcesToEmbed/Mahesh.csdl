@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="COMPANYModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="department">
+    <Key>
+      <PropertyRef Name="dep_id" />
+    </Key>
+    <Property Name="dep_id" Type="Int32" Nullable="false" />
+    <Property Name="dep_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="dep_location" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="employees" Relationship="Self.FK_employees_department" FromRole="department" ToRole="employees" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="Int32" Nullable="false" />
+    <Property Name="emp_name" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="job_name" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="manager_id" Type="Int32" />
+    <Property Name="hire_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="salary" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="commission" Type="Decimal" Precision="7" Scale="2" Nullable="false" />
+    <Property Name="dep_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="department" Relationship="Self.FK_employees_department" FromRole="employees" ToRole="department" />
+  </EntityType>
+  <Association Name="FK_employees_department">
+    <End Role="department" Type="Self.department" Multiplicity="1" />
+    <End Role="employees" Type="Self.employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="department">
+        <PropertyRef Name="dep_id" />
+      </Principal>
+      <Dependent Role="employees">
+        <PropertyRef Name="dep_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="COMPANYEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="departments" EntityType="Self.department" />
+    <EntitySet Name="employees" EntityType="Self.employee" />
+    <AssociationSet Name="FK_employees_department" Association="Self.FK_employees_department">
+      <End Role="department" EntitySet="departments" />
+      <End Role="employees" EntitySet="employees" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
