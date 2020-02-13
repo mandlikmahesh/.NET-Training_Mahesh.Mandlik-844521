@@ -1,0 +1,14 @@
+c:\users\admin\source\repos\Collection\Collection\obj\Debug\Collection.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\Collection\Collection\bin\Debug\Collection.exe.config
+c:\users\admin\source\repos\Collection\Collection\bin\Debug\Collection.exe
+c:\users\admin\source\repos\Collection\Collection\bin\Debug\Collection.pdb
+c:\users\admin\source\repos\Collection\Collection\obj\Debug\Collection.exe
+c:\users\admin\source\repos\Collection\Collection\obj\Debug\Collection.pdb
+c:\users\admin\source\repos\Collection\Collection\obj\Debug\Collection.csprojResolveAssemblyReference.cache
+D:\Mahesh CTS\C# Collection Handson\Collection\bin\Debug\Collection.exe.config
+D:\Mahesh CTS\C# Collection Handson\Collection\bin\Debug\Collection.exe
+D:\Mahesh CTS\C# Collection Handson\Collection\bin\Debug\Collection.pdb
+D:\Mahesh CTS\C# Collection Handson\Collection\obj\Debug\Collection.csprojResolveAssemblyReference.cache
+D:\Mahesh CTS\C# Collection Handson\Collection\obj\Debug\Collection.csproj.CoreCompileInputs.cache
+D:\Mahesh CTS\C# Collection Handson\Collection\obj\Debug\Collection.exe
+D:\Mahesh CTS\C# Collection Handson\Collection\obj\Debug\Collection.pdb
