@@ -1,0 +1,14 @@
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.csprojResolveAssemblyReference.cache
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\bin\Debug\FileIO_CTS.exe.config
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\bin\Debug\FileIO_CTS.exe
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\bin\Debug\FileIO_CTS.pdb
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.exe
+c:\users\admin\source\repos\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.pdb
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\bin\Debug\FileIO_CTS.exe.config
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\bin\Debug\FileIO_CTS.exe
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\bin\Debug\FileIO_CTS.pdb
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.csprojResolveAssemblyReference.cache
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.csproj.CoreCompileInputs.cache
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.exe
+D:\Mahesh CTS\FileIO_CTS\FileIO_CTS\obj\Debug\FileIO_CTS.pdb
