@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\obj\Debug\Assignment 1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\bin\Debug\Assignment 1.exe.config
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\bin\Debug\Assignment 1.exe
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\bin\Debug\Assignment 1.pdb
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\obj\Debug\Assignment 1.exe
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\obj\Debug\Assignment 1.pdb
+C:\Users\Admin\source\repos\Assignment 1\Assignment 1\obj\Debug\Assignment 1.csprojResolveAssemblyReference.cache
+D:\Mahesh CTS\C# Array Handson\bin\Debug\Assignment 1.exe.config
+D:\Mahesh CTS\C# Array Handson\bin\Debug\Assignment 1.exe
+D:\Mahesh CTS\C# Array Handson\bin\Debug\Assignment 1.pdb
+D:\Mahesh CTS\C# Array Handson\obj\Debug\Assignment 1.csprojResolveAssemblyReference.cache
+D:\Mahesh CTS\C# Array Handson\obj\Debug\Assignment 1.csproj.CoreCompileInputs.cache
+D:\Mahesh CTS\C# Array Handson\obj\Debug\Assignment 1.exe
+D:\Mahesh CTS\C# Array Handson\obj\Debug\Assignment 1.pdb
