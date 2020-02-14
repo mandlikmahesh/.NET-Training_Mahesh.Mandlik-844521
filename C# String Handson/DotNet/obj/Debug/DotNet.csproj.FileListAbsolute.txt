@@ -1,0 +1,7 @@
+c:\users\admin\source\repos\DotNet\DotNet\obj\Debug\DotNet.csprojResolveAssemblyReference.cache
+c:\users\admin\source\repos\DotNet\DotNet\obj\Debug\DotNet.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\DotNet\DotNet\bin\Debug\DotNet.exe.config
+c:\users\admin\source\repos\DotNet\DotNet\bin\Debug\DotNet.exe
+c:\users\admin\source\repos\DotNet\DotNet\bin\Debug\DotNet.pdb
+c:\users\admin\source\repos\DotNet\DotNet\obj\Debug\DotNet.exe
+c:\users\admin\source\repos\DotNet\DotNet\obj\Debug\DotNet.pdb
