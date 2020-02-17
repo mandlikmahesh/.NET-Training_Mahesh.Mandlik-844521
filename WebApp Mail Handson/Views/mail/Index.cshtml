@@ -1,0 +1,13 @@
+﻿@model mail.Models.csmodel
+@{
+    ViewBag.Title = "Index";
+    Layout = "";
+}
+
+@using (Html.BeginForm("mailinfo", "Home", FormMethod.Post))
+{
+    <span>USER NAME:</span>@Html.TextBox("un")<br />
+
+    <span>PASSWORD :</span>@Html.TextBox("ps", null, new { type = "password" })
+    <input type="submit" value="submit" />
+}
