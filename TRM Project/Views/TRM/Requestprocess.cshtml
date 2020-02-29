@@ -1,0 +1,121 @@
+﻿
+@model List<TRMProjectCode.Models.Requestdata>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Requestprocess</title>
+</head>
+<body>
+
+    @Html.ActionLink("ADD Request", "AddRequest", "Login")
+    <table border="1">
+        <tr>
+
+            <td>
+                <b>
+                    Skill
+                </b>
+            </td>
+            <td>
+                <b>
+                    Start_date
+                </b>
+            </td>
+            <td>
+                <b>
+                    End_date
+                </b>
+            </td>
+            <td>
+                <b>
+                    Request_name
+                </b>
+            </td>
+            <td>
+                <b>
+                    pm_id
+                </b>
+            </td>
+            <td>
+                <b>
+                    Exicutive_id
+                </b>
+            </td>
+
+            <td>
+                <b>
+                    Trainer_id
+                </b>
+            </td>
+            <td>
+                <b>
+                    Status
+                </b>
+            </td>
+        </tr>
+
+
+
+
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>
+                    @i.skill
+                </td>
+                <td>
+                    @i.startdate
+                </td>
+                <td>
+                    @i.enddate
+                </td>
+                <td>
+                    @i.Requestname
+                </td>
+                <td>
+                    @i.PMName
+                </td>
+                <td>
+                    @i.Exicutiveid
+                </td>
+                <td>
+                    @i.Trainerid
+                </td>
+                <td>
+                    @i.status
+                </td>
+                @{
+                    if ((ViewBag.rid == 2) && (i.status == "Request"))
+                    {
+                        <td><a href="~/Login/Spocsub?rid=@i.reqid">click here</a></td>
+                    }
+                }
+                @{
+                    if ((ViewBag.rid == 1) && (i.status == "Assign"))
+                    {
+                        <td><a href="~/Login/Spocsub?rid=@i.reqid">click here</a></td>
+                    }
+
+
+                }
+            </tr>
+
+
+
+                    }
+    </table>
+    @{
+        if (ViewBag.rid == 1)
+        {
+            <div><a href="~/Login/AddRequest">Add new Request</a></div>
+        }
+    }
+
+</body>
+</html>

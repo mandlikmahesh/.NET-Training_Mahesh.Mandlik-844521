@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sopcsub</title>
+</head>
+<body>
+    <form action="/Login/spocdb" method="post">
+        <table border="1">
+            <tr>
+                <td>
+                    <b>Exicutive Id</b>
+                </td>
+                <td>
+                    <b>Trainer Id</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.DropDownList("trainer", (SelectListItem[])(ViewBag.trainers))
+
+                </td>
+                <td>
+                    @Html.DropDownList("exicutive", (SelectListItem[])(ViewBag.exicutives))
+
+                </td>
+
+            </tr>
+        </table>
+        <input type="submit" />
+    </form>
+</body>
+</html>
+
